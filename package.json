@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-typescript",
+  "version": "1.0.0",
+  "description": "My impressive Nuxt.js project",
+  "author": "harada-k",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "eslint --ext .ts,.js,.vue ."
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.3.8",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.6",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3"
+  }
+}

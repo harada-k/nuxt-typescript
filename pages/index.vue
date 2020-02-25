@@ -29,6 +29,7 @@
         <a class="button--action" @click="addSparkles">✨ {{ sparkles }}</a>
         <a class="button--action" @click="addThumbsup">👍 {{ thumbsup }}</a>
         <a class="button--action" @click="addHeart">🧡 {{ heart }}</a>
+        <a class="button--action" @click="addSmile">😀 {{ smile }}</a>
         <a class="button--grey" @click="clear">Clear</a>
       </div>
     </div>
@@ -48,12 +49,13 @@ export default Vue.extend({
       tada: 0,
       sparkles: 0,
       thumbsup: 0,
-      heart: 0
+      heart: 0,
+      smile: 0
     }
   },
   computed: {
     counter (): number {
-      return this.tada + this.sparkles + this.thumbsup + this.heart
+      return this.tada + this.sparkles + this.thumbsup + this.heart + this.smile
     }
   },
   methods: {
@@ -69,11 +71,15 @@ export default Vue.extend({
     addHeart (): void {
       this.heart++
     },
+    addSmile (): void {
+      this.smile++
+    },
     clear (): void {
       this.tada = 0
       this.sparkles = 0
       this.thumbsup = 0
       this.heart = 0
+      this.smile = 0
     }
   }
 })
